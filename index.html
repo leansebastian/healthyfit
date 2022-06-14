@@ -6,76 +6,104 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Healthy Fit</title>
+
+        <link rel="stylesheet" href="css_b/bootstrap.css">
+
         <link rel="stylesheet" href="css/estilos.css">
 
 
     </head>
 
     <body id="grillas-areas" class="pagContact">
-        <header id="header" class="serviciosFlex">
-            <article>
-                <h1><a class="textoBlanco SinSubrayar" href="index.html"> HEALTHY FIT</a></h1>
-                <h2 class="textoblanco">PLATAFORMA DE ENTRENAMIENTO ONLINE</h2>
-            </article>     
-                   
-       
-
-            <nav>
-                <ul>
-                <li><a class="SinSubrayar" href="livetraining.html">LIVE TRAINING</a></li>
-                <li><a class="SinSubrayar" href="hfprogram.html">HF PROGRAM</a></li>
-                <li><a class="SinSubrayar" href="workout.html">WORKOUT</a></li>
-                <li><a class="SinSubrayar" href="contacto.html">CONTACTO</a></li>
-                </ul>
-
-            </nav>
-        </header>
-    <hr>    
-                    
-            <aside id="contactar" class="border   CajaTexto"> 
-                <h3 class="cursiva negrita textoBlanco">Accede GRATIS a una entrevista con el entrenador</h3>
-                <article class="paddingtop">
-                    <form action="">
-                
-                        <input type="text"name="nombrecompleto" placeholder="Nombre">
-                        <input type="text"name="telefono" placeholder="Telefono">
-                        <input type="email" placeholder="Correo de mail">                
-                    </form>   
-                </article>
-            </aside>
+      <header id="header">
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+        
+            <a class="navbar-brand SinSubrayar" href="index.html">
+                <h1> HEALTHY FIT</h1>
+            </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
             
-            <section id="servicios" class="border columnaFlex seccionContacto">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link SinSubrayar" href="livetraining.html">LIVE TRAINING</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link SinSubrayar" href="hfprogram.html">HF PROGRAM</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link SinSubrayar" href="workout.html">WORKOUT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link SinSubrayar" href="contacto.html">CONTACTO</a>
+                  </li>
 
 
-                <article >
-                    <img src="imagen/contact_3.jpg" width="100%" height="100%">
+                </ul>
                
-
-                </article>
-
-                
+              </div>
+            </div>
+          </nav>
     
-    
-
-
+    </header>
+    <hr>    
                    
+    
+
+
+        <section id="cabeza"  class="centrar columnaFlex paddingtop "> 
+            <h1 class="cursiva negrita ">
+        ENTRENA DONDE Y CUANDO QUIERAS</h1>
+        
+            <h2 class="negrita interlineado"> CLASES EN VIVO - CLASES GRABADAS - GUIA Y CONTINUO SEGUIMIENTO </h2>
+        </section>
 
 
 
 
-               
+        <section id="servicios" class="border columnaFlex seccionContacto">
 
-                             
-                
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="imagen/contact_3.jpg" width="100%" height="500vh" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagen/contact_5.jpg" width="100%" height="500vh" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagen/contact_8.png" width="100%" height="500vh" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
 
 
-            </section>
+        
+        
+        </section>
 
 
 
-            <section id="testimonios" class="border textoBlanco centrar interlineado CajaTexto  columnaFlex">
+        <section id="testimonios" class="border textoBlanco centrar interlineado CajaTexto  columnaFlex">
 
-                <h5> SERVICIOS</h5>
+            <h5 class="paddingtop"> SERVICIOS</h5>
                 
                 <hr>
                 <p> ENTRENAMIENTO FUNCIONAL</p>
@@ -96,34 +124,38 @@
               
                 
             
-             </section> 
-            
-           
-           
-            <section id="cabeza"  class="border  centrar  textoBlanco columnaFlex paddingtop "> 
-                <h1 class="cursiva ">
-                ENTRENA DONDE Y CUANDO QUIERAS</h1>
+        </section>
+
+
+        
+        <aside id="contactar" class="border   CajaTexto"> 
+            <h3 class="cursiva negrita textoBlanco">Accede GRATIS a una entrevista con el entrenador</h3>
+            <article class="paddingtop">
+                <form action="">
                 
-                <h2 class="negrita interlineado"> CLASES EN VIVO - CLASES GRABADAS - GUIA Y CONTINUO SEGUIMIENTO </h2>
-            </section>
+                    <input type="text"name="nombrecompleto" placeholder="Nombre">
+                    <input type="text"name="telefono" placeholder="Telefono">
+                    <input type="email" placeholder="Correo de mail">                
+                </form>   
+            </article>
+        </aside>
 
                    
     
           
-    
-        
-
-
 
         <footer id="pie">
        
-                <p>Healthy Fit es un sistema de entrenamiento que esta probado y funcionando en mas de 8 paises.
-                Ya son más de 70 las personas que han pasado por nuestro programa y están felices por sus resultados alcanzados </p>
-                <p class="negrita">SUMATE HOY A NUESTRO TEAM y comenzá el cambio que estás buscando</p>
-                <p>
-                    &copy2022 - Desarrollado por Lean
-                </p>
+            <p>Healthy Fit es un sistema de entrenamiento que esta probado y funcionando en mas de 8 paises.
+            Ya son más de 70 las personas que han pasado por nuestro programa y están felices por sus resultados alcanzados </p>
+            <p class="negrita">SUMATE HOY A NUESTRO TEAM y comenzá el cambio que estás buscando</p>
+            <p>&copy2022 - Desarrollado por Lean</p>
+        
         </footer>
+        
+        
+
+        <script src="js/bootstrap.js"></script>
 
 
 

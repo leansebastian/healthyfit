@@ -31,11 +31,11 @@
 
     li {
         display: inline-block;
-        background-color: rgb(185, 233, 202);
-        width: 120px;
-        height: 25px;
+        background-color: rgb(8, 8, 8);
+        width: 130px;
+        height: 40px;
         padding: 1px;
-        margin: 2px;
+        margin: 1px;
         border: outset 2px white;        
     }
     nav {
@@ -71,7 +71,7 @@
 
    @keyframes texto {
        from {
-           transform: translateX(100px);
+           transform: translateX(50px);
        }
        to{
            transform: translateX(0px);
@@ -145,12 +145,12 @@
     }
 
     li {
-        display: inline;
-        background-color: rgb(185, 233, 202);
-        width: 100px;
-        height: 20px;
+        display: inline-block;
+        background-color: rgb(0, 0, 0);
+        width: 160px;
+        height: 35px;
         padding: 1px;
-        margin: 2px;
+        margin: 1px;
         border: outset 2px white;        
     }
 
@@ -194,19 +194,20 @@
     }
 
     li {
-        display: inline;
-        background-color: rgb(185, 233, 202);
-        width: 100px;
-        height: 20px;
+        display: inline-block;
+        background-color: rgb(0, 0, 0);
+        width: 160px;
+        height: 35px;
         padding: 1px;
-        margin: 2px;
+        margin: 1px;
         border: outset 2px white;        
     }
 
     nav {
         padding: 10px;
-       text-align: center;
-       font-size: 10px;   
+        text-align: center;
+        font-size: 10px;
+        align-items: center;   
    }
 
 
@@ -238,7 +239,7 @@
 
 
 body {
-    background-color: rgb(185, 233, 202);
+    background-color: rgb(129, 201, 191);
 }
 
 
@@ -246,9 +247,10 @@ body {
     grid-area: header;
     align-items: center;
     text-align: start;
-    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,105,121,1) 35%, rgb(26, 3, 53) 100%);
+   
     width: 100%;
-    padding: 20px;
+    
+  
     color: rgb(255, 255, 255);   
 }
 
@@ -259,7 +261,7 @@ body {
 
 #testimonios {
     grid-area: testi;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-image: linear-gradient(90deg, rgb(38, 36, 82) 0%, rgba(9,105,121,1) 35%, rgb(117, 72, 106) 100%);
     ;
 }
@@ -274,7 +276,7 @@ body {
 
 #cabeza {
     grid-area: cabeza;
-    background-color: rgb(0, 0, 0) ;    
+    background-color: rgb(129, 201, 191) ;    
     border-radius: 6px
 }
 
@@ -282,9 +284,10 @@ body {
     grid-area: pie;
     background-color: rgb(0, 0, 0);
     color: white;
-    padding: 50px 0px 10px 20px;
+    padding: 50px 0px 10px 20px;   
     line-height: 20px;
-    align-items: flex-end;            
+    align-items: flex-end;  
+              
 }
 
 .transicion {
@@ -314,18 +317,15 @@ body {
         font-size: 20px;
     }
     
-    div {
-        padding: 5px;
-        margin: 10px;
-        text-align: center;
-    }
 
 
 
     .flexDiv {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        text-align: center;
+        
         
 
        
@@ -357,11 +357,11 @@ body {
     
     .seccionContacto {
        
-        text-align: center;
+        
         background-image: linear-gradient(90deg, rgb(47, 47, 56) 0%, rgb(39, 107, 119) 35%, rgb(41, 29, 35) 100%);
         border-radius: 6px;
         padding: 10px;
-        margin: px;
+        
         
     }
     
@@ -474,6 +474,11 @@ body {
         text-align: center;
     }
     
+    .contenidoCentrado {
+        align-items: center;
+        text-align: center;
+    }
+
     .derecha {
         text-align: right;
     }
