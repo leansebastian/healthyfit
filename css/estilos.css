@@ -371,7 +371,18 @@ body {
     }
 
     
-    
+    article h5{
+        font-size: 15px;
+        text-align: center;
+        background-color: rgb(255, 254, 254);
+        width: 120px;
+        height: 25px;
+        padding: 1px;  
+        border: outset 2px white;
+    }
+
+
+    /*
     article h5{
         font-size: 15px;
         text-align: center;
@@ -386,16 +397,53 @@ body {
     article h5:hover {
         width: 100%;
         border: solid 3px black;
+        cursor: pointer; 
+        
+    } */
+
+    article a{
+        font-size: 15px;
+        text-align: center;
+        background-color: rgb(255, 254, 254);
+        color: black;
+        width: 120px;
+        height: 30px;
+        padding: 1px;  
+        border: outset 2px white;
+        transition: all 1s;
+            
+    }
+    
+    article a:hover {
+        width: 100%;
+        border: solid 3px black;
         cursor: pointer;
         
     }
     
+    a:link {
+        text-decoration: none;
+        
+    }
+
+    a:visited {
+        color: rgb(53, 53, 155);
+    }
+    
  
     
+
+
+
     li:hover {
         border-right: solid 5px black;
         cursor: pointer;
     }
+
+
+
+
+
 
     
 
@@ -464,7 +512,11 @@ body {
     
     .paddingtop {
         padding-top: 2%;
-    }        
+    }  
+    
+    .paddingbotton {
+        padding-bottom: 2%;
+    }
     
     .negrita {
         font-weight: bold;
@@ -489,7 +541,8 @@ body {
     }
     .textoBlanco {
         color: aliceblue;
-    }        
+    }
+    
     
     .pagContact {
         width: 100%;               
