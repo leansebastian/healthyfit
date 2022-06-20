@@ -1,0 +1,237 @@
+@import "colores";
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: $colorFondo;
+}
+
+
+
+
+
+.transicion {
+    transition: all 2s;
+}
+.transicion:hover {
+    width: 100%;
+    ;
+    
+}
+
+.flexDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        }
+
+.CajaInicio {
+        text-align: center;
+        background-color: $colorBlanco;
+        border-radius: 6px;  
+        color: $colorNegro;
+        
+    }
+    
+.galeria {
+        padding: 15px;
+        margin: 5px;
+        text-align: center;
+        align-items: center;
+               
+       
+    }
+    
+.contactate {
+        padding: 20px;
+        margin: 25px;
+        text-align: center;
+        
+    }
+    
+.seccionContacto {
+       
+        
+        background-image: $colorDegradeDos;
+        border-radius: 6px;
+        padding: 10px;
+        
+        
+    }
+    
+.imgGaleria {
+        width: 300px;
+        height: 180px;              
+    }
+
+    
+article h5{
+        font-size: 15px;
+        text-align: center;
+        background-color: $colorBlanco;
+        width: 120px;
+        height: 25px;
+        padding: 1px;  
+        border: outset 2px $colorBlanco;
+    }
+
+
+
+article a{
+        font-size: 15px;
+        text-align: center;
+        background-color: $colorFondo;
+        color: $colorNegro;
+        width: 120px;
+        height: 30px;
+        padding: 1px;  
+        border: outset 2px $colorBlanco;
+        transition: all 1s;
+            
+    }
+    
+    a:hover {
+        width: 100%;
+        border: solid 3px $colorNegro;
+        cursor: pointer;
+        
+    }
+    
+    a:link {
+        text-decoration: none;
+        
+    }
+
+    a:visited {
+        color: $colorNegro;
+    }
+    
+    
+    li:hover {
+        border-right: solid 5px $colorNegro;
+        cursor: pointer;
+    }
+
+    input {
+        font-size: 14px;
+        margin: 4px;
+        padding: 4px;        
+    }
+    
+    
+    
+    .textoArt {
+        padding: 2px;
+        margin: 20px 10% 50px 0px;
+    }
+    
+    
+    .imagen {
+        margin: 20px 0px 50px 10% ;
+        padding: 5px;   
+    }
+    
+    .SinSubrayar {
+        text-decoration: none;
+        color: $colorNegro;  
+    }
+    
+    .CajaTexto {
+        text-align: center;
+        background-image: $colorDegrade;
+        border-radius: 6px;                
+    }        
+
+    .border {
+       padding: 3px;
+        border: solid 1px $colorNegro;
+    }
+          
+    .serviciosFlex {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between
+    }
+    
+    .columnaFlex {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;            
+    }             
+ 
+
+
+
+
+p {
+    font-size: 12px;
+}
+
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 14px;
+    padding: 8px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+.interlineado {
+    line-height: 30px;
+}
+
+.normal {
+    font-style: normal;
+}
+
+.cursiva {
+    font-style: italic;
+}
+
+.paddingtop {
+    padding-top: 2%;
+}  
+
+.paddingbotton {
+    padding-bottom: 2%;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.contenidoCentrado {
+    align-items: center;
+    text-align: center;
+}
+
+.derecha {
+    text-align: right;
+}
+
+.textoVerde {
+    color:$colorFondo;
+
+}
+.textoBlanco {
+    color: $colorBlanco;
+}
+
+    
+.pagContact {
+    width: 100%;               
+     
+}  
+

@@ -1,0 +1,207 @@
+
+@media (min-width: 1024px) {        
+    h1 {
+        font-size: 50px;
+    }
+    
+    h2 {
+        font-size: 15px;
+    }
+
+    li {
+        display: inline-block;
+        background-color: $colorNegro;
+        width: 130px;
+        height: 40px;
+        padding: 1px;
+        margin: 1px;
+        border: outset 2px $colorFondo;        
+    }
+
+    nav {
+        padding: 10px;
+        text-align: center;
+        font-size: 15px;   
+   }
+
+   .foto-animada {
+       animation-name: texto;
+       animation-duration: 3s;
+       animation-iteration-count: 1;
+   }
+
+   .caja-animada {
+       animation-name: caja;
+       animation-duration: 2s;
+       animation-iteration-count: infinite;
+      
+    }
+    
+   }
+
+   .barra-animada {
+        animation-name: barra;
+        animation-duration: 1s;
+        animation-iteration-count: 5;
+   }
+
+
+
+
+
+   @keyframes texto {
+       from {
+           transform: translateX(50px);
+       }
+       to{
+           transform: translateX(0px);
+       }
+   }
+
+   @keyframes caja {
+       0% {
+           transform: translatey(0px)
+       }
+       25% {
+           transform: translatey(5px)
+       }
+       50% {
+           transform: translatey(0px);
+       }
+       75% {
+        transform: translatey(-5px)
+    }
+       100%{
+        transform: translatey(0px)
+       }
+   }
+
+   @keyframes barra {
+    from{
+        transform: translatey(-10px);
+    }
+    to {
+        transform: translatey(0px);
+    }
+    
+   }
+
+   
+
+
+
+
+    #grillas-areas {
+        display: grid;
+        grid-template-areas:
+        "header header header" 
+        "cabeza cabeza cabeza"
+        "servicios servicios testi"
+        "contactar contactar testi"
+        "pie pie pie"
+        ;
+        grid-template-columns: 20% 60% auto;
+        grid-template-rows: 1fr 2fr 5fr 5fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;         
+            
+        }
+    
+        
+        
+
+@media (min-width: 481px) and (max-width:1023px) {
+    h1 {
+        font-size: 30px;
+    }
+    
+    h2 {
+        font-size: 10px;
+    }
+
+    li {
+        display: inline-block;
+        background-color: $colorNegro;
+        width: 160px;
+        height: 35px;
+        padding: 1px;
+        margin: 1px;
+        border: outset 2px $colorBlanco;        
+    }
+
+    nav {
+        padding: 10px;
+        text-align: center;
+        font-size: 10px;   
+   }
+
+
+    #grillas-areas {
+        display: grid;
+        grid-template-areas:
+        "header header" 
+        "cabeza cabeza"
+        "servicios servicios"
+        "contactar testi"
+        "pie pie"
+        ;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr 1fr 2fr 2fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;         
+            
+        }
+}
+
+@media (max-width: 480px) {
+    body{
+        width: 100%;
+        height: 100vh;
+        
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+    
+    h2 {
+        font-size: 10px;
+    }
+
+    li {
+        display: inline-block;
+        background-color: $colorNegro;
+        width: 160px;
+        height: 35px;
+        padding: 1px;
+        margin: 1px;
+        border: outset 2px $colorBlanco;        
+    }
+
+    nav {
+        padding: 10px;
+        text-align: center;
+        font-size: 10px;
+        align-items: center;   
+   }
+
+
+   
+    #grillas-areas {
+        display: grid;
+        grid-template-areas:
+        "header" 
+        "cabeza"
+        "servicios"
+        "contactar"
+        "testi"
+        "pie"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 8fr 2fr 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;         
+            
+        }
+
+}
