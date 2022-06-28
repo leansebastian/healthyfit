@@ -1,3 +1,4 @@
+
 @import "colores";
 
 
@@ -9,6 +10,40 @@ body {
 
 
 
+
+
+
+@mixin cajon ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+    
+}
+
+
+
+.boton {
+    @include cajon(300px, 180px );
+    background-color: $colorBlanco;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid rgb(31, 31, 102);
+}
+
+.boton-fondo {
+    @extend .boton;
+    background-color: $colorFondo;
+}
+
+.boton-degrade {
+    @extend .boton;
+    background-color: $colorDegrade;
+}
+
+.boton-negro {
+    @extend .boton;
+    background-color: $colorNegro;
+    border: 2px solid $colorBlanco;
+}
 
 
 .transicion {
@@ -52,8 +87,6 @@ body {
     }
     
 .seccionContacto {
-       
-        
         background-image: $colorDegradeDos;
         border-radius: 6px;
         padding: 10px;
@@ -62,57 +95,21 @@ body {
     }
     
 .imgGaleria {
-        width: 300px;
-        height: 180px;              
-    }
-
-    
-article h5{
-        font-size: 15px;
-        text-align: center;
-        background-color: $colorBlanco;
-        width: 120px;
-        height: 25px;
-        padding: 1px;  
-        border: outset 2px $colorBlanco;
+    @include cajon (300px, 180px );          
     }
 
 
-
-article a{
-        font-size: 15px;
+    li a{ 
+        font-size: 13px;
         text-align: center;
         background-color: $colorFondo;
         color: $colorNegro;
-        width: 120px;
-        height: 30px;
+        @include cajon(120px, 30px );
         padding: 1px;  
-        border: outset 2px $colorBlanco;
-        transition: all 1s;
-            
-    }
-    
-    a:hover {
-        width: 100%;
-        border: solid 3px $colorNegro;
-        cursor: pointer;
-        
-    }
-    
-    a:link {
-        text-decoration: none;
-        
     }
 
-    a:visited {
-        color: $colorNegro;
-    }
-    
-    
-    li:hover {
-        border-right: solid 5px $colorNegro;
-        cursor: pointer;
-    }
+
+
 
     input {
         font-size: 14px;
@@ -163,26 +160,64 @@ article a{
     }             
  
 
+    h1 {
+        font-size: 50px;
+        animation: fluido 10s ease-in-out infinite;
+        background: linear-gradient(-45deg, #db866c, #7345df, #3db9e6, #23d5ab);
+        background-size: 300%;
+        -webkit-background-clip: text;
+          background-clip: text;
+         -webkit-text-fill-color: transparent;
 
+    }
 
+    @keyframes fluido {
+        0% { background-position: 0 50% }
+        50% { background-position: 100% 50% }
+        100% { background-position: 0 50% }
+    }
 
-p {
-    font-size: 12px;
-}
+    h2 {
+        font-size: 40px;
+    }
+    
+    
+    h3 {
+        font-size: 25px;
+    }
+    
+    h4 {
+        font-size: 16px; 
+    }
+    
+    h5 {
+        font-size: 14px;
+        text-align: center;
+        background-color: $colorBlanco;
+        @include cajon(120px, 30px );
+        padding: 2px;  
+        border: outset 2px $colorBlanco;
+        border: outset 2px $colorBlanco;
+        transition: all 1s;
+    }
+    
+h5:hover {
+        width: 100%;
+        border: solid 3px $colorNegro;
+        cursor: pointer;
+        
+    }
+    
+    a:link {
+        text-decoration: none; 
+    }
 
+    
+    p {
+        font-size: 12px;
+    }
+    
 
-h3 {
-    font-size: 30px;
-}
-
-h4 {
-    font-size: 14px;
-    padding: 8px;
-}
-
-h5 {
-    font-size: 20px;
-}
 
 .interlineado {
     line-height: 30px;
