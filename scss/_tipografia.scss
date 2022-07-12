@@ -1,1 +1,59 @@
-@import url('https://fonts.googleapis.com/css2? family= Hind+Madurai:wght@300;600;700 & display=swap');
+.navbar {
+    background-color: transparent;
+.sub-nav{
+    @include medidas(auto,auto);
+    .celu {
+        display: none;
+    }
+    .margin-top {
+        margin-top: 28px;
+    }
+    .nav-link {
+        font-size: 1.1rem;
+        &:hover {
+            color: $color-verde;
+        }
+    }
+}
+}
+
+
+.header {
+    @include medidas(auto,100%);
+    padding-bottom: 100px;
+    h1 {
+        color: $color-blanco;
+        font-size: 4rem;
+        font-weight: bolder;
+    }
+    h2 {
+        color: $color-verde;
+        animation: fadeInLeft;
+        animation-duration: 2s;
+    }
+}
+
+/* FOOTER */
+.footer {
+    section {
+        color: $color-verde;
+        h3 {
+            font-size: 1.25rem;
+        }
+        p {
+            margin: 0;
+        }
+    }
+    ul {
+        a {
+            color: $color-blanco;
+            &:hover {
+                color: $color-verde;
+            }
+        }
+        .rrss {
+            @include medidas(25px, auto);
+        }
+    }
+
+}

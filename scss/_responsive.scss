@@ -1,15 +1,11 @@
-@import "estructura";
 
-@media (min-width: 1024px) {        
-    h1 {
-        font-size: 50px;
-        color: $colorBlanco;
-    }
-    h2 {
-        font-size: 40px;
-    }
+
+@media (min-width: 1024px) {
     
-    
+    body {
+        height: 100vh;
+    }
+  
     h3 {
         font-size: 25px;
     }
@@ -25,21 +21,6 @@
     p {
         font-size: 12px;
     }
-    
-   
-    li {
-        display: inline-block;
-        @include cajon (130px, 40px);
-        padding: 1px;
-        margin: 2px;            
-    }
-
-    nav {
-        
-        padding: 20px;
-        text-align: center;
-        font-size: 15px;   
-   }
 
    .foto-animada {
        animation-name: texto;
@@ -50,28 +31,21 @@
    .caja-animada {
        animation-name: caja;
        animation-duration: 2s;
-       animation-iteration-count: infinite;
-      
+       animation-iteration-count: 3;  
     }
     
-   }
-
    .barra-animada {
         animation-name: barra;
         animation-duration: 1s;
         animation-iteration-count: 5;
    }
 
-
-
-
-
    @keyframes texto {
        from {
-           transform: translateX(50px);
+           transform: translateY(50px);
        }
        to{
-           transform: translateX(0px);
+           transform: translateY(0px);
        }
    }
 
@@ -80,13 +54,13 @@
            transform: translatey(0px)
        }
        25% {
-           transform: translatey(5px)
+           transform: translatey(3px)
        }
        50% {
            transform: translatey(0px);
        }
        75% {
-        transform: translatey(-5px)
+        transform: translatey(-3px)
     }
        100%{
         transform: translatey(0px)
@@ -100,128 +74,158 @@
     to {
         transform: translatey(0px);
     }
-    
-   }
-
-   
-
-
-
+}
 
     #grillas-areas {
         display: grid;
         grid-template-areas:
-        "header header header" 
-        "cabeza cabeza cabeza"
+        "heading heading heading"
+        "cabeza cabeza testi"
         "servicios servicios testi"
         "contactar contactar testi"
         "pie pie pie"
         ;
         grid-template-columns: 20% 60% auto;
-        grid-template-rows: 1fr 2fr 5fr 5fr 1fr;
+        grid-template-rows: 2fr 1fr 2fr 2fr auto;
         grid-column-gap: 10px;
-        grid-row-gap: 5px;         
-            
+        grid-row-gap: 5px;            
         }
+    }
     
         
         
 
 @media (min-width: 481px) and (max-width:1023px) {
-    h1 {
-        font-size: 30px;
-        color: $colorBlanco;
-    }
-    
 
-    h2 {
-        font-size: 25px;
-    }
-    
-    h3 {
-        font-size: 10px;
-    }
-    
-    li {
-        display: inline-block;
-        @include cajon (130px, 40px);
-        padding: 1px;
-        margin: 2px;            
-    }
-
-    nav {
-        padding: 10px;
-        text-align: center;
-        font-size: 10px;   
-   }
-
-
-    #grillas-areas {
-        display: grid;
-        grid-template-areas:
-        "header header" 
-        "cabeza cabeza"
-        "servicios servicios"
-        "contactar testi"
-        "pie pie"
-        ;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 1fr 1fr 2fr 2fr 1fr;
-        grid-column-gap: 10px;
-        grid-row-gap: 5px;         
-            
-        }
-
-
-@media (max-width: 480px) {
     body{
         width: 100%;
-        height: 100vh;
-        
+        height: 100vh;     
     }
 
-    h1 {
-        font-size: 30px;
-        color: $colorBlanco;
-    }
-    }
-
-    h2 {
-        font-size: 25px;
-    }
     
+     .navbar {
+        position: fixed;
+        top: 0;
+        @include medidas(100%, auto);
+
+        background-color: $color-negro;
+        .sub-nav {
+            @include medidas(100%, auto);
+            .celu {
+                display: block;
+            }
+            .margin-top {
+                margin-top: 20px;
+            }
+            .ocultar-celu {
+                display: none;
+            }
+        }
+    }
+
+
+    .header {
+        padding-top: 100px;
+        h1 {
+            font-size: 4rem;
+        }
+        h2 {
+            font-size: 25px;
+        }
+    }
+
+    
+
+    
+    .galeria {
+        justify-content: center!important;
+    }
+
     h3 {
-        font-size: 10px;
+        font-size: 20px;
     }
-
-    li {
-        display: inline-block;
-        @include cajon (130px, 40px);
-        padding: 1px;
-        margin: 2px;            
-    }
-    
-    nav {
-        padding: 10px;
-        text-align: center;
-        font-size: 10px;
-        align-items: center;   
-   }
-
 
    
     #grillas-areas {
         display: grid;
         grid-template-areas:
-        "header" 
+        "heading" 
         "cabeza"
         "servicios"
-        "contactar"
         "testi"
+        "contactar"
         "pie"
         ;
         grid-template-columns: 100%;
-        grid-template-rows: 1fr 1fr 8fr 2fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 2fr 2fr 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;         
+            
+        }
+}
+
+
+@media (max-width: 480px) {
+    body{
+        width: 100%;
+        height: 100vh;     
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        @include medidas(100%, auto);
+
+        background-color: $color-negro;
+        .sub-nav {
+            @include medidas(100%, auto);
+            .celu {
+                display: block;
+            }
+            .margin-top {
+                margin-top: 20px;
+            }
+            .ocultar-celu {
+                display: none;
+            }
+        }
+    }
+
+
+    .header {
+        padding-top: 100px;
+        h1 {
+            font-size: 3rem;
+        }
+        h2 {
+            font-size: 20px;
+        }
+    }
+
+    
+
+    
+    .galeria {
+        justify-content: center!important;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+   
+    #grillas-areas {
+        display: grid;
+        grid-template-areas:
+        "heading" 
+        "cabeza"
+        "servicios"
+        "testi"
+        "contactar"
+        "pie"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 2fr 2fr 1fr 1fr;
         grid-column-gap: 10px;
         grid-row-gap: 5px;         
             

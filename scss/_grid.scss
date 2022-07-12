@@ -2,8 +2,8 @@
 
 
 
-#header {
-    grid-area: header;
+#heading {
+    grid-area: heading;
     align-items: center;
     text-align: start;
     width: 100%;
@@ -11,34 +11,34 @@
 
 #servicios {
     grid-area: servicios;
+    justify-content: space-around;
             
 }
 
 #testimonios {
     grid-area: testi;
-    justify-content: space-between;
-    background: $colorNegro;
+    justify-content: space-evenly;
+    background: $color-negro;
+    color: $color-blanco;
+    text-align: center; 
+    border-radius: 6px;
 }
 
 #contactar {
     grid-area: contactar;
     align-items: center;
-    padding: 3%;
+    padding: 1%;
+    
 }
 
 
 #cabeza {
     grid-area: cabeza;
-    background-color: $colorFondo ;    
+    background-color: $color-verde ;    
     border-radius: 6px
 }
 
 #pie {
-    grid-area: pie;
-    background-color: black;
-    color: $colorBlanco;
-    padding: 50px 0px 10px 20px;   
-    line-height: 20px;
-    align-items: flex-end;  
+    grid-area: pie; 
               
 }

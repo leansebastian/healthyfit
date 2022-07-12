@@ -1,9 +1,11 @@
-$colorFondo: rgb(129, 201, 191);
+$color-verde: rgb(155, 235, 224);
 
-$colorNegro: rgb(34, 34, 34);
+$color-negro: rgb(34, 34, 34);
 
-$colorBlanco: rgb(248, 222, 222);
+$color-blanco: rgb(248, 222, 222);
 
-$colorDegrade: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(15, 56, 63) 35%, rgb(139, 57, 96) 100%);
+$color-degrade: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(15, 56, 63) 35%, rgb(113, 57, 139) 100%);
 
-$colorDegradeDos: linear-gradient(90deg, rgb(47, 47, 56) 0%, rgb(39, 107, 119) 35%, rgb(41, 29, 35) 100%);
+$color-variante: linear-gradient(90deg, rgb(47, 47, 56) 0%, rgb(39, 107, 119) 35%, rgb(41, 29, 35) 100%);
+
+$color-titulo: linear-gradient(-45deg, #6cdb91, #7345df, #3db9e6, #23d5ab);

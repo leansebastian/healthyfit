@@ -1,0 +1,18 @@
+/* Error: expected selector.
+ *    ,
+ * 98 |     *∕
+ *    |      ^
+ *    '
+ *   scss\_estructura.scss 98:6  @import
+ *   scss\origen.scss 4:9        root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: expected selector.\a    \2577 \a 98 \2502      */\d\a    \2502       ^\a    \2575 \a   scss\\_estructura.scss 98:6  @import\a   scss\\origen.scss 4:9        root stylesheet";
+}

@@ -1,7 +1,46 @@
+@import "estructura" ;
+
+
 * {
     margin: 0;
     padding: 0;
     font-family: 'hind Madurai', sans-serif;
     box-sizing: border-box;
     vertical-align: baseline;
+}
+
+
+h1, a {
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.entrada {
+    @include medidas (auto, 25rem) ;
+    background-color: $color-negro ;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.secciones {
+    @extend .entrada;
+    @include medidas(auto, 25rem);
+}
+
+.btn {
+    background-color: $color-blanco;
+    color: $color-verde;
+    border-radius: 15px;
+    &:hover {
+        color: $color-blanco;
+        background-color: $color-verde;
+    }
 }

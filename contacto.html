@@ -18,49 +18,48 @@
 
         <link rel="stylesheet" href="css/estilos.css">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
 
 
     </head>
 
-    <body id="grillas-areas" class="pagContact">
-      <header id="header">
-        <nav class="navbar navbar-expand-lg bg-dark">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><h1 class="textoBlanco SinSubrayar">HEALTHY FIT</h1></a>
-               
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+    <body id="grillas-areas">
 
-          </div>   
+      <div class="entrada" id="heading">
 
-       
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container-fluid sub-nav">
 
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav textoBlanco negrita">
-                <li class="nav-item">
-                  <a class="nav-link active SinSubrayar" aria-current="page" href="livetraining.html">LIVE TRAINING</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link SinSubrayar" href="hfprogram.html">HF PROGRAM</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link SinSubrayar" href="workout.html">WORKOUT</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link SinSubrayar" href="contacto.html">CONTACTO</a>
-                </li>
+                <a class="navbar-brand mobile" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span></button>
 
-              </ul>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item celu margin-top mx-1"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item margin-top mx-1"><a class="nav-link" href="livetraining.html">LIVE TRAINING</a></li>
+                        <li class="nav-item margin-top mx-1"><a class="nav-link" href="hfprogram.html">HF PROGRAM</a></li>
+                        <li class="nav-item margin-top mx-1"><a class="nav-link" href="workout.html">WORKOUT</a></li>
+                        <li class="nav-item margin-top mx-1"><a class="nav-link" href="contacto.html">CONTACTO</a></li>
+                    </ul>
+                </div>
+                
             </div>
-         
         </nav>
-      </header>
-      <hr>    
+
+        <!-- HEADER -->
+        <header class="header d-flex flex-column justify-content-center align-items-center">
+            <a href="index.html"><h1>HF+</h1> </a>
+            <h2>HEALTHY FIT</h2>
+        </header>
+
+    </div>    
                     
-        <aside id="cabeza" class="centrar columnaFlex paddingtop paddingbotton border seccionContacto"> 
-          <h3 class="paddingtop cursiva negrita textoBlanco  barra-animada">COMPLETA TUS DATOS Y NOS CONTACTAMOS A LA BREVEDAD</h3>
-                <article class="paddingtop">
+        <aside id="cabeza" class="centrar columna-flex padding-top padding-botton borde-negro seccion-contacto margin-botton margin-top"> 
+          <h3 class="padding-top cursiva negrita text-white  barra-animada">COMPLETA TUS DATOS Y NOS CONTACTAMOS A LA BREVEDAD</h3>
+                <article class="padding-top">
                     <form action="">
                 
                         <input type="text"name="nombrecompleto" placeholder="Nombre">
@@ -70,31 +69,29 @@
                 </article>
             </aside>
             
-            <section id="servicios" class="border columnaFlex seccionContacto">
+            <section id="servicios" class="borde-negro columna-flex">
               <article >
                 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 
                   <div class="carousel-inner">
                 
                     <div class="carousel-item active" data-bs-interval="2000">
-                    <img src="imagen/contact_6.jpg" width="100%" height="500vh" class="d-block w-100" alt="persona entrenando">
+                    <img class="img-fluid" src="imagen/contact_6.jpg" alt="persona entrenando">
                     </div>
                 
                     <div class="carousel-item" data-bs-interval="2000">
-                    <img src="imagen/contact_3.jpg" width="100%" height="500vh" class="d-block w-100" alt="personas elongando">
+                    <img class="img-fluid" src="imagen/contact_3.jpg" alt="personas elongando">
                     </div>
                 
                     <div class="carousel-item" data-bs-interval="2000">
-                    <img src="imagen/contact_13.jpg" width="100%" height="500vh" class="d-block w-100" alt="colchoneta y zapatillas en el pasto">
+                    <img class="img-fluid" src="imagen/contact_13.jpg" alt="colchoneta y zapatillas en el pasto">
                     </div>                          
                 
                     <div class="carousel-item" data-bs-interval="2000">
-                    <img src="imagen/contact_14.jpg" width="100%" height="500vh" class="d-block w-100" alt="computadora y colchoneta">
+                    <img class="img-fluid" src="imagen/contact_5.jpg"  alt="computadora y colchoneta">
                     </div>
-                
-                    <div class="carousel-item" data-bs-interval="2000">
-                    <img src="imagen/contact_16.jpg" width="100%" height="500vh" class="d-block w-100" alt="persona entrenando">
-                    </div>
+
+                    
                 
                   </div>
               
@@ -114,11 +111,13 @@
 
               </article>
             
+
+              
             </section>
 
-            <section id="testimonios" class="border textoBlanco centrar interlineado CajaTexto  columnaFlex">
+            <section id="testimonios" class="borde-negro  interlineado caja-animada columna-flex">
 
-                <h3 class="paddingtop negrita"> BENEFICIOS</h3>
+                <h3 class="padding-top negrita"> BENEFICIOS</h3>
                 
                 <hr>
                 <p> MEJORA TU CONDICION FISICA</p>
@@ -126,8 +125,6 @@
                 <p>BAJA DE PESO</p>
                 <hr>
                 <p> AUMENTA TU MASA MUSCULAR</p>
-                <hr>
-                <p>VOLVE A ENCONTRAR TU RUTINA</p>
                 <hr>
                 <p>INCORPORA HABITOS SALUDABLES</p>
                 <hr>
@@ -139,20 +136,21 @@
               
             </section> 
             
-            <section id="contactar"  class="centrar columnaFlex paddingtop "> 
+            <section id="contactar"  class="centrar columna-flex paddingftop "> 
                 <h2 class="cursiva negrita ">
                 ¿COMENZAMOS? </h2>
                 
                 <h3 class="negrita interlineado"> PROBA HOY UNA CLASE SIN CARGO </h3>
             </section>
 
-            <footer id="pie">
-       
-              <p>Healthy Fit es un sistema de entrenamiento que esta probado y funcionando en mas de 8 paises.
-              Ya son más de 70 las personas que han pasado por nuestro programa y están felices por sus resultados alcanzados </p>
-              <p class="negrita">SUMATE HOY A NUESTRO TEAM y comenzá el cambio que estás buscando</p>
-              <p>&copy2022 - Desarrollado por Lean Sebastian</p>
-        </footer>
+            <footer class="bg-dark padding-top" id="pie">
+              <p class="text-white centrar padding-top">Recibi novedades sobre nuestros entrenamientos y tips nutricionales todas las semanas. Conoce nuestro sistema de entrenamiento y accede a descuentos exclusivos siendo parte de nuestra comunidad.
+              </p>
+              <div class="text-center p-1 text-white">
+                <p>© 2022 Copyright: Lean Sebastian</p>
+            </div>
+         
+          </footer>
 
         <script src="js/bootstrap.js"></script>
           
