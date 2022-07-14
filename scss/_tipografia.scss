@@ -1,59 +1,66 @@
-.navbar {
-    background-color: transparent;
-.sub-nav{
-    @include medidas(auto,auto);
-    .celu {
-        display: none;
+h1, a {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 100px;
+    animation: fluido 10s ease-in-out infinite;
+    background: linear-gradient(-45deg, #6cdb91, #7345df, #3db9e6, #23d5ab);
+    background-size: 300%;
+    -webkit-background-clip: text;
+      background-clip: text;
+     -webkit-text-fill-color: transparent;
+
+}
+
+@keyframes fluido {
+    0% { background-position: 0 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0 50% }
+}
+
+h2 {
+font-size: 40px;
+}
+
+
+h3 {
+font-size: 25px;
+}
+
+h4 {
+font-size: 16px; 
+}
+
+h5 {
+font-size: 14px;
+text-align: center;
+background-color: $color-verde;
+@include medidas(120px, 30px );
+padding: 2px;  
+border: outset 2px $color-negro;
+transition: all 1s;
+width: 200px;
+&:hover {
+    width: 100%;
+    border: solid 3px $color-negro;
+    cursor: pointer;  
     }
-    .margin-top {
-        margin-top: 28px;
-    }
-    .nav-link {
-        font-size: 1.1rem;
-        &:hover {
-            color: $color-verde;
-        }
+.h5-link {
+    
+    &:hover {
+        width: 100%;
+        cursor: pointer;  
+        color: $color-negro;
+       
     }
 }
 }
 
-
-.header {
-    @include medidas(auto,100%);
-    padding-bottom: 100px;
-    h1 {
-        color: $color-blanco;
-        font-size: 4rem;
-        font-weight: bolder;
-    }
-    h2 {
-        color: $color-verde;
-        animation: fadeInLeft;
-        animation-duration: 2s;
-    }
+p {
+font-size: 12px;
 }
 
-/* FOOTER */
-.footer {
-    section {
-        color: $color-verde;
-        h3 {
-            font-size: 1.25rem;
-        }
-        p {
-            margin: 0;
-        }
-    }
-    ul {
-        a {
-            color: $color-blanco;
-            &:hover {
-                color: $color-verde;
-            }
-        }
-        .rrss {
-            @include medidas(25px, auto);
-        }
-    }
-
+a {
+    text-decoration: none;
 }

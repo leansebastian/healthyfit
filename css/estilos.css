@@ -4,26 +4,63 @@ body {
   background-color: rgb(155, 235, 224);
 }
 
-.transicion {
-  transition: all 2s;
+ul {
+  list-style: none;
 }
 
-.transicion:hover {
-  width: 100%;
+.entrada {
+  width: auto;
+  height: 25rem;
+  background-color: rgb(34, 34, 34);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.flex-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+.navbar {
+  background-color: transparent;
+}
+.navbar .sub-nav {
+  width: auto;
+  height: auto;
+}
+.navbar .sub-nav .celu {
+  display: none;
+}
+.navbar .sub-nav .margin-top {
+  margin-top: 25px;
+}
+.navbar .sub-nav .nav-link {
+  font-size: 1.1rem;
+}
+.navbar .sub-nav .nav-link:hover {
+  color: rgb(155, 235, 224);
 }
 
-.caja-inicio {
-  text-align: center;
-  background-color: rgb(248, 222, 222);
-  border-radius: 6px;
-  color: rgb(34, 34, 34);
+.header {
+  width: auto;
+  height: 100%;
+  padding-bottom: 100px;
+}
+.header h1 {
+  color: rgb(248, 222, 222);
+  font-size: 6rem;
+  font-weight: bolder;
+}
+.header h2 {
+  color: rgb(155, 235, 224);
+  animation: fadeInLeft;
+  animation-duration: 2s;
+}
+
+.footer section {
+  color: rgb(155, 235, 224);
+}
+.footer section h3 {
+  font-size: 1.25rem;
+}
+.footer section p {
+  margin: 0;
 }
 
 .galeria {
@@ -31,12 +68,6 @@ body {
   margin: 5px;
   text-align: center;
   align-items: center;
-}
-
-.contactate {
-  padding: 20px;
-  margin: 25px;
-  text-align: center;
 }
 
 .seccion-contacto, .seccion-galeria {
@@ -61,26 +92,11 @@ input {
   padding: 4px;
 }
 
-.texto-art {
-  padding: 2px;
-  margin: 20px 10% 50px 0px;
-}
-
-.imagen {
-  margin: 20px 0px 50px 10%;
-  padding: 5px;
-}
-
 .caja-texto {
   color: rgb(248, 222, 222);
   text-align: center;
   background-image: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(15, 56, 63) 35%, rgb(113, 57, 139) 100%);
   border-radius: 10px;
-}
-
-.border {
-  padding: 3px;
-  border: solid 1px rgb(34, 34, 34);
 }
 
 .borde-negro {
@@ -103,62 +119,6 @@ input {
 .programa {
   font-size: 2rem;
   color: rgb(34, 34, 34);
-}
-
-h1 {
-  font-size: 100px;
-  animation: fluido 10s ease-in-out infinite;
-  background: linear-gradient(-45deg, #6cdb91, #7345df, #3db9e6, #23d5ab);
-  background-size: 300%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-@keyframes fluido {
-  0% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0 50%;
-  }
-}
-h2 {
-  font-size: 40px;
-}
-
-h3 {
-  font-size: 25px;
-}
-
-h4 {
-  font-size: 16px;
-}
-
-h5 {
-  font-size: 14px;
-  text-align: center;
-  background-color: rgb(248, 222, 222);
-  width: 120px;
-  height: 30px;
-  padding: 2px;
-  border: outset 2px rgb(248, 222, 222);
-  border: outset 2px rgb(248, 222, 222);
-  transition: all 1s;
-  width: 200px;
-}
-
-h5:hover {
-  width: 100%;
-  border: solid 3px rgb(34, 34, 34);
-  cursor: pointer;
-}
-
-p {
-  font-size: 12px;
 }
 
 .interlineado {
@@ -195,67 +155,6 @@ p {
 
 .texto-negro {
   color: rgb(34, 34, 34);
-}
-
-.contenido-centrado {
-  align-items: center;
-  text-align: center;
-}
-
-.navbar {
-  background-color: transparent;
-}
-.navbar .sub-nav {
-  width: auto;
-  height: auto;
-}
-.navbar .sub-nav .celu {
-  display: none;
-}
-.navbar .sub-nav .margin-top {
-  margin-top: 35px;
-}
-.navbar .sub-nav .nav-link {
-  font-size: 1.1rem;
-}
-.navbar .sub-nav .nav-link:hover {
-  color: rgb(155, 235, 224);
-}
-
-.header {
-  width: auto;
-  height: 100%;
-  padding-bottom: 100px;
-}
-.header h1 {
-  color: rgb(248, 222, 222);
-  font-size: 6rem;
-  font-weight: bolder;
-}
-.header h2 {
-  color: rgb(155, 235, 224);
-  animation: fadeInLeft;
-  animation-duration: 2s;
-}
-
-.footer section {
-  color: rgb(248, 222, 222);
-}
-.footer section h3 {
-  font-size: 1.2rem;
-}
-.footer section p {
-  margin: 0;
-}
-.footer ul a {
-  color: rgb(248, 222, 222);
-}
-.footer ul a:hover {
-  color: rgb(155, 235, 224);
-}
-.footer ul .rrss {
-  width: 25px;
-  height: auto;
 }
 
 .sin-subrayar {
@@ -275,202 +174,6 @@ h1, a {
   text-transform: uppercase;
 }
 
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
-.entrada, .secciones {
-  width: auto;
-  height: 25rem;
-  background-color: rgb(34, 34, 34);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.secciones {
-  width: auto;
-  height: 25rem;
-}
-
-.btn {
-  background-color: rgb(248, 222, 222);
-  color: rgb(155, 235, 224);
-  border-radius: 15px;
-}
-.btn:hover {
-  color: rgb(248, 222, 222);
-  background-color: rgb(155, 235, 224);
-}
-
-.navbar {
-  background-color: transparent;
-}
-.navbar .sub-nav {
-  width: auto;
-  height: auto;
-}
-.navbar .sub-nav .celu {
-  display: none;
-}
-.navbar .sub-nav .margin-top {
-  margin-top: 28px;
-}
-.navbar .sub-nav .nav-link {
-  font-size: 1.1rem;
-}
-.navbar .sub-nav .nav-link:hover {
-  color: rgb(155, 235, 224);
-}
-
-.header {
-  width: auto;
-  height: 100%;
-  padding-bottom: 100px;
-}
-.header h1 {
-  color: rgb(248, 222, 222);
-  font-size: 4rem;
-  font-weight: bolder;
-}
-.header h2 {
-  color: rgb(155, 235, 224);
-  animation: fadeInLeft;
-  animation-duration: 2s;
-}
-
-/* FOOTER */
-.footer section {
-  color: rgb(155, 235, 224);
-}
-.footer section h3 {
-  font-size: 1.25rem;
-}
-.footer section p {
-  margin: 0;
-}
-.footer ul a {
-  color: rgb(248, 222, 222);
-}
-.footer ul a:hover {
-  color: rgb(155, 235, 224);
-}
-.footer ul .rrss {
-  width: 25px;
-  height: auto;
-}
-
-body {
-  width: 100%;
-  height: 100vh;
-  background-color: rgb(155, 235, 224);
-}
-
-.transicion {
-  transition: all 2s;
-}
-
-.transicion:hover {
-  width: 100%;
-}
-
-.flex-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.caja-inicio {
-  text-align: center;
-  background-color: rgb(248, 222, 222);
-  border-radius: 6px;
-  color: rgb(34, 34, 34);
-}
-
-.galeria {
-  padding: 15px;
-  margin: 5px;
-  text-align: center;
-  align-items: center;
-}
-
-.contactate {
-  padding: 20px;
-  margin: 25px;
-  text-align: center;
-}
-
-.seccion-contacto, .seccion-galeria {
-  background-image: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(15, 56, 63) 35%, rgb(113, 57, 139) 100%);
-  border-radius: 6px;
-  padding: 10px;
-}
-
-.seccion-galeria {
-  background-image: linear-gradient(90deg, rgb(47, 47, 56) 0%, rgb(39, 107, 119) 35%, rgb(41, 29, 35) 100%);
-}
-
-.img-galeria {
-  width: 280px;
-  height: 180px;
-}
-
-input {
-  font-size: 14px;
-  width: 200px;
-  margin: 4px;
-  padding: 4px;
-}
-
-.texto-art {
-  padding: 2px;
-  margin: 20px 10% 50px 0px;
-}
-
-.imagen {
-  margin: 20px 0px 50px 10%;
-  padding: 5px;
-}
-
-.caja-texto {
-  color: rgb(248, 222, 222);
-  text-align: center;
-  background-image: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(15, 56, 63) 35%, rgb(113, 57, 139) 100%);
-  border-radius: 10px;
-}
-
-.border {
-  padding: 3px;
-  border: solid 1px rgb(34, 34, 34);
-}
-
-.borde-negro {
-  border: solid 2px rgb(34, 34, 34);
-}
-
-.servicios-flex {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-
-.columna-flex {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-}
-
-.programa {
-  font-size: 2rem;
-  color: rgb(34, 34, 34);
-}
-
 h1 {
   font-size: 100px;
   animation: fluido 10s ease-in-out infinite;
@@ -507,24 +210,154 @@ h4 {
 h5 {
   font-size: 14px;
   text-align: center;
-  background-color: rgb(248, 222, 222);
+  background-color: rgb(155, 235, 224);
   width: 120px;
   height: 30px;
   padding: 2px;
-  border: outset 2px rgb(248, 222, 222);
-  border: outset 2px rgb(248, 222, 222);
+  border: outset 2px rgb(34, 34, 34);
   transition: all 1s;
   width: 200px;
 }
-
 h5:hover {
   width: 100%;
   border: solid 3px rgb(34, 34, 34);
   cursor: pointer;
 }
+h5 .h5-link:hover {
+  width: 100%;
+  cursor: pointer;
+  color: rgb(34, 34, 34);
+}
 
 p {
   font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(155, 235, 224);
+}
+
+ul {
+  list-style: none;
+}
+
+.entrada {
+  width: auto;
+  height: 25rem;
+  background-color: rgb(34, 34, 34);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.navbar {
+  background-color: transparent;
+}
+.navbar .sub-nav {
+  width: auto;
+  height: auto;
+}
+.navbar .sub-nav .celu {
+  display: none;
+}
+.navbar .sub-nav .margin-top {
+  margin-top: 25px;
+}
+.navbar .sub-nav .nav-link {
+  font-size: 1.1rem;
+}
+.navbar .sub-nav .nav-link:hover {
+  color: rgb(155, 235, 224);
+}
+
+.header {
+  width: auto;
+  height: 100%;
+  padding-bottom: 100px;
+}
+.header h1 {
+  color: rgb(248, 222, 222);
+  font-size: 6rem;
+  font-weight: bolder;
+}
+.header h2 {
+  color: rgb(155, 235, 224);
+  animation: fadeInLeft;
+  animation-duration: 2s;
+}
+
+.footer section {
+  color: rgb(155, 235, 224);
+}
+.footer section h3 {
+  font-size: 1.25rem;
+}
+.footer section p {
+  margin: 0;
+}
+
+.galeria {
+  padding: 15px;
+  margin: 5px;
+  text-align: center;
+  align-items: center;
+}
+
+.seccion-contacto, .seccion-galeria {
+  background-image: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(15, 56, 63) 35%, rgb(113, 57, 139) 100%);
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.seccion-galeria {
+  background-image: linear-gradient(90deg, rgb(47, 47, 56) 0%, rgb(39, 107, 119) 35%, rgb(41, 29, 35) 100%);
+}
+
+.img-galeria {
+  width: 280px;
+  height: 180px;
+}
+
+input {
+  font-size: 14px;
+  width: 200px;
+  margin: 4px;
+  padding: 4px;
+}
+
+.caja-texto {
+  color: rgb(248, 222, 222);
+  text-align: center;
+  background-image: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(15, 56, 63) 35%, rgb(113, 57, 139) 100%);
+  border-radius: 10px;
+}
+
+.borde-negro {
+  border: solid 2px rgb(34, 34, 34);
+}
+
+.servicios-flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.columna-flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.programa {
+  font-size: 2rem;
+  color: rgb(34, 34, 34);
 }
 
 .interlineado {
@@ -561,67 +394,6 @@ p {
 
 .texto-negro {
   color: rgb(34, 34, 34);
-}
-
-.contenido-centrado {
-  align-items: center;
-  text-align: center;
-}
-
-.navbar {
-  background-color: transparent;
-}
-.navbar .sub-nav {
-  width: auto;
-  height: auto;
-}
-.navbar .sub-nav .celu {
-  display: none;
-}
-.navbar .sub-nav .margin-top {
-  margin-top: 35px;
-}
-.navbar .sub-nav .nav-link {
-  font-size: 1.1rem;
-}
-.navbar .sub-nav .nav-link:hover {
-  color: rgb(155, 235, 224);
-}
-
-.header {
-  width: auto;
-  height: 100%;
-  padding-bottom: 100px;
-}
-.header h1 {
-  color: rgb(248, 222, 222);
-  font-size: 6rem;
-  font-weight: bolder;
-}
-.header h2 {
-  color: rgb(155, 235, 224);
-  animation: fadeInLeft;
-  animation-duration: 2s;
-}
-
-.footer section {
-  color: rgb(248, 222, 222);
-}
-.footer section h3 {
-  font-size: 1.2rem;
-}
-.footer section p {
-  margin: 0;
-}
-.footer ul a {
-  color: rgb(248, 222, 222);
-}
-.footer ul a:hover {
-  color: rgb(155, 235, 224);
-}
-.footer ul .rrss {
-  width: 25px;
-  height: auto;
 }
 
 .sin-subrayar {
@@ -724,9 +496,6 @@ p {
   .navbar .sub-nav .margin-top {
     margin-top: 20px;
   }
-  .navbar .sub-nav .ocultar-celu {
-    display: none;
-  }
   .header {
     padding-top: 100px;
   }
@@ -772,9 +541,6 @@ p {
   }
   .navbar .sub-nav .margin-top {
     margin-top: 20px;
-  }
-  .navbar .sub-nav .ocultar-celu {
-    display: none;
   }
   .header {
     padding-top: 100px;

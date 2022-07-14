@@ -4,54 +4,82 @@ body {
     width: 100%;
     height: 100vh;
     background-color: $color-verde;
-}
+    }
 
 @mixin medidas ($ancho, $alto) {
     width: $ancho;
-    height: $alto;
-    
-}
-
-.transicion {
-    transition: all 2s;
-}
-.transicion:hover {
-    width: 100%;
-    ;
-    
-}
-
-.flex-div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        }
-
-.caja-inicio {
-        text-align: center;
-        background-color: $color-blanco;
-        border-radius: 6px;  
-        color: $color-negro;
-        
+    height: $alto;  
     }
-    
+
+ul {
+    list-style: none;
+    }
+
+.entrada {
+    @include medidas (auto, 25rem) ;
+    background-color: $color-negro ;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    }
+
+.navbar {
+    background-color: transparent;
+.sub-nav{
+    @include medidas(auto,auto);
+    .celu {
+        display: none;
+            }
+    .margin-top {
+        margin-top: 25px;
+        }
+    .nav-link {
+        font-size: 1.1rem;
+        &:hover {
+            color: $color-verde;
+            }
+        }
+    }
+    }
+
+.header {
+    @include medidas(auto, 100%);
+    padding-bottom: 100px;
+    h1 {
+        color: $color-blanco;
+        font-size: 6rem;
+        font-weight: bolder;
+        }
+    h2 {
+        color: $color-verde;
+        animation: fadeInLeft;
+        animation-duration: 2s;
+        }
+    }
+
+
+
+.footer {
+    section {
+        color: $color-verde;
+        h3 {
+            font-size: 1.25rem;
+            }
+        p {
+            margin: 0;
+            }
+        }
+    }
+
+
 .galeria {
         padding: 15px;
         margin: 5px;
         text-align: center;
-        align-items: center;
-               
-       
+        align-items: center; 
     }
     
-.contactate {
-        padding: 20px;
-        margin: 25px;
-        text-align: center;
-        
-    }
-    
+
 .seccion-contacto {
         background-image: $color-degrade;
         border-radius: 6px;
@@ -61,7 +89,7 @@ body {
 .seccion-galeria {
     @extend .seccion-contacto;
     background-image: $color-variante;
-}
+    }
     
 .img-galeria {
     @include medidas (280px, 180px );          
@@ -73,22 +101,8 @@ input {
         margin: 4px;
         padding: 4px;        
     }
-    
-    
-    
-.texto-art {
-        padding: 2px;
-        margin: 20px 10% 50px 0px;
-    }
-    
-    
-.imagen {
-        margin: 20px 0px 50px 10% ;
-        padding: 5px;   
-    }
-    
-   
-    
+      
+
 .caja-texto {
     color: $color-blanco;
     text-align: center;
@@ -96,16 +110,11 @@ input {
     border-radius: 10px;            
     }        
 
-.border {
-       padding: 3px;
-        border: solid 1px $color-negro;
-    }
+
 .borde-negro {
     border:solid 2px $color-negro;
-}
-
-
-          
+    }
+      
 .servicios-flex {
         display: flex;
         flex-flow: row wrap;
@@ -123,174 +132,46 @@ input {
 .programa {
     font-size: 2rem;
     color: $color-negro;
-}
+    }
  
-
-h1 {
-        font-size: 100px;
-        animation: fluido 10s ease-in-out infinite;
-        background: linear-gradient(-45deg, #6cdb91, #7345df, #3db9e6, #23d5ab);
-        background-size: 300%;
-        -webkit-background-clip: text;
-          background-clip: text;
-         -webkit-text-fill-color: transparent;
-
-    }
-
-    @keyframes fluido {
-        0% { background-position: 0 50% }
-        50% { background-position: 100% 50% }
-        100% { background-position: 0 50% }
-    }
-
-h2 {
-    font-size: 40px;
-    }
-    
-    
-h3 {
-    font-size: 25px;
-    }
-
-h4 {
-    font-size: 16px; 
-    }
-    
-h5 {
-    font-size: 14px;
-    text-align: center;
-    background-color: $color-blanco;
-    @include medidas(120px, 30px );
-    padding: 2px;  
-    border: outset 2px $color-blanco;
-    border: outset 2px $color-blanco;
-    transition: all 1s;
-    width: 200px;
-    }
-    
-h5:hover {
-    width: 100%;
-    border: solid 3px $color-negro;
-    cursor: pointer;  
-    }
-
-p {
-    font-size: 12px;
-    }
-    
-
-
 .interlineado {
     line-height: 30px;
-}
+    }
 
 .cursiva {
     font-style: italic;
-}
+    }
 
 .padding-top {
     padding-top: 2%;
-}  
+    }  
 
 .padding-botton {
     padding-bottom: 2%;
-}
+    }
 
 .margin-botton {
     margin-bottom: 1%;
-}
+    }
 
 .margin-top {
     margin-top: 1%;
-}
+    }
 
 .negrita {
     font-weight: bold;
-}
+    }
 
 .centrar {
     text-align: center;
-}
+    }
 
 .texto-negro {
     color: $color-negro;
-}
-
-
-
-.contenido-centrado {
-    align-items: center;
-    text-align: center;
-}
-
-
-
-
-.navbar {
-    background-color: transparent;
-.sub-nav{
-    @include medidas(auto, auto);
-    .celu {
-        display: none;
     }
-    .margin-top {
-        margin-top: 35px;
-    }
-    .nav-link {
-        font-size: 1.1rem;
-        &:hover {
-            color: $color-verde;
-        }
-    }
-}
-}
-
-
-.header {
-    @include medidas(auto, 100%);
-    padding-bottom: 100px;
-    h1 {
-        color: $color-blanco;
-        font-size: 6rem;
-        font-weight: bolder;
-    }
-    h2 {
-        color: $color-verde;
-        animation: fadeInLeft;
-        animation-duration: 2s;
-    }
-}
-
-
-
-
-.footer {
-    section {
-        color: $color-blanco;
-        h3 {
-            font-size: 1.2rem;
-        }
-        p {
-            margin: 0;
-        }
-    }
-    ul {
-        a {
-            color: $color-blanco;
-            &:hover {
-                color: $color-verde;
-            }
-        }
-        .rrss {
-            @include medidas(25px, auto);
-        }
-    }
-
-}
-
 
 .sin-subrayar {
     text-decoration: none;
     color: $color-negro;
-}
+    }
 

@@ -1,7 +1,5 @@
 @import "colores";
 
-
-
 #heading {
     grid-area: heading;
     align-items: center;
@@ -11,8 +9,7 @@
 
 #servicios {
     grid-area: servicios;
-    justify-content: space-around;
-            
+    justify-content: space-around;       
 }
 
 #testimonios {
@@ -28,7 +25,6 @@
     grid-area: contactar;
     align-items: center;
     padding: 1%;
-    
 }
 
 
@@ -39,6 +35,5 @@
 }
 
 #pie {
-    grid-area: pie; 
-              
+    grid-area: pie;         
 }
