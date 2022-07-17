@@ -108,7 +108,29 @@ input {
     text-align: center;
     background-image: $color-degrade;
     border-radius: 10px;            
-    }        
+    }
+    
+.caja-forms {
+        text-align: center;
+        background-color: $color-verde;
+        @include medidas(150px, 40px );
+        padding: 2px;
+        border-radius: 10px;  
+        border: outset 1px $color-negro;
+        width: 200px;
+        &:hover {
+            cursor: pointer;  
+            }
+        .caja-forms-link {
+            &:hover {
+                width: 100%;
+                cursor: pointer;  
+                color: $color-negro;
+               
+            }
+        }
+        }
+
 
 
 .borde-negro {
